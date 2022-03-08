@@ -7,6 +7,7 @@
 
     <title>MEDIPLUS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f815d7e30.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -20,11 +21,11 @@
 
 
     <div class="head1">
-        <span class="text">+ 1235 2355 98</span>
+        <span class="text"><i class="fa-solid fa-phone"></i>+ 1235 2355 98</span>
     
-        <span class="text">youremail@email.com</span>
+        <span class="text"><i class="fa-solid fa-paper-plane"></i>youremail@email.com</span>
         
-        <p class=""><a href=""></a>Sign Up</a><a href="#">Sign In</a></p>
+        <p>Sign Up</a><a style="border-left:1px solid rgb(241, 241, 241 );"href=""></a>Sign In</p>
     </div>
 
 
@@ -33,7 +34,12 @@
         <nav>
             
             <a class="navbar-brand" href="index.html">Mediplus</a>
-      
+          <!-- USING CHECKBOX HACK -->
+        <a href="#" class="toogle-button"> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
        <div class="nav-links">
            
            
@@ -62,7 +68,7 @@
 
     <section class="header1">
 
-    	<div class="container">
+    	<div class="containerr">
     		
     			
     				<img class="img1"    src="images/xabout.png" alt="">
@@ -250,11 +256,12 @@
         
           <div class="blogx">
         
-                
+        
               <img src="images/ximage_1.png" alt="">
 
               <div class="datex">
-                  <h4>June 9, 2019  &nbsp;  Admin</h4>
+                  <h4>June 9, 2019  &nbsp;  Admin <i class="fa-solid fa-message"></i> &nbsp;3 </h4> 
+                  
               </div>
                    
                   <div class="textblog">
@@ -271,7 +278,7 @@
                 
                 <img src="images/ximage_2.png" alt="">
                 <div class="datex">
-                    <h4>June 9, 2019  &nbsp;  Admin</h4>
+                    <h4>June 9, 2019  &nbsp;  Admin <i class="fa-solid fa-message"></i> &nbsp;3 </h4>
                 </div>
                       <div class="textblog">
                         <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
@@ -286,7 +293,7 @@
                 
                     <img src="images/ximage_3.png" alt="">
                     <div class="datex">
-                        <h4>June 9, 2019  &nbsp;  Admin</h4>
+                        <h4>June 9, 2019  &nbsp;  Admin <i class="fa-solid fa-message"></i> &nbsp;3 </h4>
                     </div>
                           <div class="textblog">
                             <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
@@ -317,7 +324,7 @@
               <img src="images/ximage_1.png" alt="">
 
               <div class="datex">
-                  <h4>June 9, 2019  &nbsp;  Admin</h4>
+                  <h4>June 9, 2019  &nbsp;  Admin <i class="fa-solid fa-message"></i> &nbsp;3 </h4>
               </div>
                    
                   <div class="textblog">
@@ -334,7 +341,7 @@
                 
                 <img src="images/ximage_2.png" alt="">
                 <div class="datex">
-                    <h4>June 9, 2019  &nbsp;  Admin</h4>
+                    <h4>June 9, 2019  &nbsp;  Admin <i class="fa-solid fa-message"></i> &nbsp;3 </h4>
                 </div>
                       <div class="textblog">
                         <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
@@ -349,7 +356,7 @@
                 
                     <img src="images/ximage_3.png" alt="">
                     <div class="datex">
-                        <h4>June 9, 2019  &nbsp;  Admin</h4>
+                        <h4>June 9, 2019  &nbsp;  Admin <i class="fa-solid fa-message"></i> &nbsp;3 </h4>
                     </div>
                           <div class="textblog">
                             <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
@@ -445,26 +452,36 @@
         <div class="contact-col">
        
               <h2>Contact Us</h2>
-              <p class="ptag"> Far far away, behind the word mountains, far from the countries Vokalia <br  ><span>and Consonantia</span></p>
+              <p class="ptag"> Far far away, behind the word mountains, far from the countries Vokalia <br  >and Consonantia</p>
             </div>
           
-         <div class="texttt">
+         <div class="textt">
+             <div class="boxx">
+                <i  id="icon" class="fa-solid fa-location-crosshairs fa-4x"></i>
                     <h3>Address</h3>
                   <p>198 West 21th Street, Suite 721 New York NY 10016</p>
 
+             </div>
 
-
-                
+                  <div class="boxx">
+                    <i  id="icon" class="fa-solid fa-phone fa-4x"></i>
                     <h3>Contact Number</h3>
                   <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
-                
-            
-           
+                  </div>
+                  <div class="boxx">
+                    <i id="icon" class="fa-solid fa-paper-plane fa-4x"></i>
                     <h3 class="mb-4">Email Address</h3>
                   <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
              
+                  </div>
+
+
+                  <div class="boxx">
+
+                    <i  id="icon" class="fa-solid fa-earth-africa fa-4x"></i>
                     <h3 class="mb-4">Website</h3>
                   <p><a href="">yoursite.com</a></p>
+                  </div>
                 </div>
          
 
@@ -472,32 +489,120 @@
 
     </section>
 
-    <section class="form1">
 
-          <div class="form-d">
-        <form class="dform">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Send Message" class="herobtn">
-                </div>
-              </form>
-            
+    
+
+<!-------------------------form and map------------------------------->
+
+      <section>
+
+
+        <div class="mapk">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13249.247068040606!2d151.20960562674117!3d-33.8816236491114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1468899355787" width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212645.52238596775!2d72.94602351467276!3d33.61603729734983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1646667691061!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
-  
+            <div class="contact-form">
+                <form action="">
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group">
+                    <input type="email" class="form-control" name="e-mail" placeholder="Your E-mail Adress" />
+                    </div>
+                    <div class="form-group">
+                    <input type="tel" class="form-control" name="phone" placeholder="Subject"/>
+                    </div>
+                    <div class="form-group">
+                    <textarea name="text" id="" class="form-control" rows="8" placeholder="Your Message"></textarea>
+                    </div>
+                    
+                    <button class="btn-send">Send Massage</button>
+                
+                </form>
+            </div>
+        </div>
       </section>
+
+
+      
+
+
+      <!--------------------------footer----------------------------->
+
+
+    <footer class="footer">
+
+
+    	
+            <div class="foot1">
+              <h2 class="heading-2 margin-y ">Mediplus</h2>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <div class="icons margin-x">
+                <i class="fa-brands fa-facebook fa-3x "></i>
+                <i class="fa-brands fa-twitter fa-3x"></i>
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                
+
+                
+              </div>
+            </div>
+          
+          
+            <div class="foot1">
+              <h2 class="heading-2 margin-y">Departments</h2>
+              <ul class="list">
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Neurology</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Opthalmology</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Nuclear Magnetic</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Surgical</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Cardiology</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Dental</a></li>
+              </ul>
+            </div>
+          
+          <div class="foot1 ">
+            
+              <h2 class="heading-2 margin-y">Links</h2>
+              <ul class="list ">
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>About</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Departments</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Doctors</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Blog</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Contact</a></li>
+              </ul>
+            </div>
+          
+          <div class="foot1">
+            
+              <h2 class="heading-2 margin-y">Services</h2>
+              <ul class="list" >
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Emergency Services</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Qualified Doctors</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>Outdoors Checkup</a></li>
+                <li><a href=""><i class="fa-solid fa-arrow-right"></i>24 Hours Services</a></li>
+              </ul>
+            </div>
+          
+          <div class="foot1">
+            
+            	<h2 class="heading-2 margin-y">Have a Questions?</h2>
+            	<div class="adress ">
+	              <ul class="">
+	                <div class="text margin-X"> <i class="fa-solid fa-location-dot icone-size "></i>203 Fake St. Mountain View, San Francisco, California, USA</span></div>
+	                <li><a href=""><span class=""></span> <i class="fa-solid fa-phone "></i><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href=""><span class=""></span> <i class="fa-solid fa-email"></i><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          
+       
+
+    </footer>
+
+
+
+    
     
 </body>
 </html>
