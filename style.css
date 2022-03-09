@@ -6,7 +6,7 @@
 }
 
 .header {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0)),
     url(images/xbg_3.png);
@@ -16,11 +16,11 @@
 }
 
 .head1 {
-  margin: 0;
   display: flex;
   padding: 3px;
-  padding-left: 15%;
+  padding-left: 8%;
   padding-right: 15%;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   width: 100;
@@ -29,28 +29,27 @@
   color: #faf9f6;
 }
 
+.head1 p {
+  text-transform: uppercase;
+}
+
 .navbar-brand {
   color: #000000;
-  text-align: right;
-  padding-top: 1rem;
-  padding-left: 20%;
-  padding-bottom: 1rem;
   font-weight: 1000;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
 }
 
 nav {
   display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
+  padding: 1% 2%;
+
   align-items: center;
   background-color: rgba(255, 255, 255, 0.4);
 }
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -71,10 +70,15 @@ nav img {
   position: relative;
 }
 
+.nav-links ul {
+  padding-right: 50px;
+}
+
 .nav-links ul li a {
-  color: white;
+  color: black;
   text-decoration: hotpink;
   font-size: 13px;
+  padding-left: 40px;
 }
 
 .nav-links ul li ::after {
@@ -96,41 +100,30 @@ nav img {
 .subheading {
   color: rgb(66, 66, 253);
 }
-.textbox {
+.header-textbox {
   width: 90;
   color: rgb(14, 13, 13);
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 28%;
   transform: translate(-50%, -50%);
   text-align: left;
+  margin-top: 3rem !important;
+}
+.header-textbox span {
+  line-height: 8;
 }
 
-.textbox h1 {
+.header-textbox h1 {
   font-size: 70px;
+  line-height: 0.9;
+  font-weight: 950;
 }
-.textbox p {
+.header-textbox p {
   margin: 10px 0 40px;
   font-size: 20px;
   color: rgb(102, 100, 100);
-}
-
-.navbar-brand {
-  margin-top: 1px;
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
-
-.navbar-brand {
-  color: #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 24px;
+  line-height: 1.5;
 }
 
 .herobtn {
@@ -138,15 +131,119 @@ nav img {
   text-decoration: none;
   padding: 12px 34px;
   font-size: 13px;
-  background: transparent;
   position: relative;
-  cursor: pointer;
   border-radius: 5px;
   background-color: red;
 }
+.appointment-btn {
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem 1.5rem !important;
+}
+
+.herobtn:hover {
+  border: 1px solid rgb(17, 86, 236);
+  background: rgb(10, 59, 221);
+  transition: 1s;
+}
+
+/*  for second selection      */
+
+.header1 {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-left: 3%;
+}
+
+.header1-text {
+  color: rgb(14, 13, 13);
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  display: inline;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.header1-img {
+  width: 100%;
+  max-width: 490px;
+  height: 840px;
+  padding-left: 50px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(images/xabout.png);
+  position: relative;
+  z-index: 1;
+}
+
+.header1-text h1 {
+  font-size: 40px;
+  text-align: unset;
+  line-height: 1.2;
+  font-size: 44px;
+  font-weight: 900;
+  margin-bottom: 1.5rem !important;
+}
+.header1-text h1 span {
+  color: blue;
+  line-height: 1.2;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.header1-text p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: rgb(102, 100, 100);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.button-two {
+  display: flex;
+  justify-content: space-between;
+}
+.btntwo {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 25px;
+}
+
+.btntwo:hover {
+  border: 1px rgb(236, 17, 53);
+  background: rgb(13, 218, 139);
+  transition: 1s;
+  border-radius: 50%;
+}
 .btnone {
-  display: inline-block;
-  padding: 15px 25px;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -166,75 +263,7 @@ nav img {
   transition: 1s;
   border-radius: 50%;
 }
-
-.herobtn:hover {
-  border: 1px solid rgb(17, 86, 236);
-  background: rgb(10, 59, 221);
-  transition: 1s;
-}
-
-/*  for second thinf      */
-
-.header1 {
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.textb {
-  width: 90;
-  color: rgb(14, 13, 13);
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-.header1 img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 650px;
-  height: 850px;
-  padding-left: 50px;
-}
-
-.textb h1 {
-  font-size: 40px;
-  text-align: unset;
-}
-.textb h1 span {
-  color: blue;
-  font-size: 40px;
-}
-
-.textb p {
-  margin: 10px 0 40px;
-  font-size: 20px;
-  color: rgb(102, 100, 100);
-}
-
-.btntwo {
-  display: inline;
-  padding: 15px 15px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4caf50;
-  border-radius: 25px;
-}
-
-.btntwo:hover {
-  border: 1px rgb(236, 17, 53);
-  background: rgb(13, 218, 139);
-  transition: 1s;
-  border-radius: 50%;
-}
-.textb a {
+.header-text a {
   color: white;
 }
 
@@ -322,14 +351,17 @@ nav img {
 .doctor-coll span {
   padding: 5%;
   color: blue;
+  line-height: 2;
 }
 
 .doctor-coll h3 {
   font-size: 25px;
+  line-height: 1.5;
 }
 .doctor-coll p {
   color: grey;
   padding: 2%;
+  line-height: 1.5;
 }
 .doctor-col h2 {
   font-size: 50px;
@@ -340,6 +372,7 @@ nav img {
   color: grey;
   padding: 10px;
   font-size: 25px;
+  line-height: 1.5;
 }
 
 .doctor img:hover {
@@ -413,19 +446,13 @@ nav img {
 
 .colim {
   display: flex;
-  /* justify-content: space-evenly; */
 }
 
 .rowin {
   display: flex;
-  /* justify-content: space-evenly; */
 }
 
 .gridfun {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly;
-  align-items: center; */
   position: absolute;
   left: 60%;
   top: 20%;
@@ -438,7 +465,7 @@ nav img {
 }
 
 .blog-col {
-  margin-top: 0%;
+  margin: 0px 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -540,10 +567,10 @@ nav img {
 .says-sec img {
   width: 30%;
   display: block;
-  padding-left: 40%;
-
+  margin-left: 150px;
   border-radius: 50%;
   border: white;
+  z-index: -1;
 }
 
 .says-txt {
@@ -636,7 +663,7 @@ nav img {
 }
 
 .textt {
-  margin-top: 5%;
+  margin: 50px 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -729,7 +756,6 @@ textarea {
 
 .footer {
   display: flex;
-  align-items: center;
 
   min-height: 50vh;
   background-image: linear-gradient(
@@ -742,13 +768,15 @@ textarea {
   position: relative;
 }
 .list a {
+  line-height: 2;
   text-decoration: none;
-  color: blue;
+  color: hsl(215, 100%, 53%);
 }
 
 .list ul {
   list-style-type: none;
   padding-top: 30%;
+  line-height: 1.5;
 }
 
 .list li {
@@ -761,7 +789,7 @@ textarea {
 .list li::before {
   content: "";
   font-size: 30px;
-  color: blue;
+  color: hsl(215, 100%, 53%);
 }
 
 .margin-y {
@@ -770,14 +798,19 @@ textarea {
 
 .margin-X {
   margin: 1rem 15px;
+  line-height: 2;
 }
 .heading-2 {
   font-size: 30px;
-  color: white;
+  color: black;
+}
+
+.foot1 p {
+  line-height: 2;
 }
 .adress li a {
   text-decoration: none;
-  color: blue;
+  color: hsl(215, 100%, 53%);
 }
 
 .adress li {
@@ -786,23 +819,25 @@ textarea {
 
 /* icons */
 
-#icon {
-  color: blue;
+.fa-brands {
+  color: hsl(215, 100%, 53%);
   padding: 5%;
-  background-color: white;
+  background-color: transparent;
   border-radius: 50%;
+  line-height: 2;
 }
 
 /*------------------------------------media -------------------------------------*/
+
 .toggle-button {
   position: absolute;
-  top: 3%;
-  right: 1rem;
-  display: flex;
+  top: 2.5%;
+  right: 5rem;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 80px;
-  height: 21px;
+  width: 47px;
+  height: 19px;
 }
 
 .toggle-button .bar {
@@ -811,11 +846,182 @@ textarea {
   background-color: white;
   border-radius: 10px;
 }
-@media screen and (min-width: 800px) {
-  .container {
-    margin: 1em 2em;
+@media screen and (max-width: 420px) {
+  .toggle-button {
+    display: flex;
+    position: absolute;
+    top: 1.5%;
+    right: 4rem;
+    width: 27px;
+    height: 19px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .head1 {
+    display: none;
+  }
+  .mapk {
+    display: flex;
+    flex-direction: column;
   }
 
+  .header-text {
+    transform: translate(-8%, -5%);
+  }
+  .header-textbox h1 {
+    display: block;
+    font-size: 39px;
+    margin-left: 70px;
+    line-height: 1.2;
+    font-weight: 950;
+  }
 
+  .header-textbox p {
+    margin-left: 70px;
+    line-height: 1.4;
+  }
+  span.subheading {
+    margin-left: 68px;
+    font-size: 21px;
+  }
+
+  .header {
+    min-height: 97vh;
+    width: 45vh;
+  }
+
+  nav {
+    display: flex;
+    padding: 3% 2%;
+    align-items: center;
+    background-color: rgba(5, 5, 5);
+  }
+  .navbar-brand {
+    color: white;
+    font-size: 19px;
+  }
+
+  .navbar-menu {
+    color: rgb(252, 245, 245);
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 1.5%;
+    right: 0;
+  }
+
+  /* .btnone {
+    margin-left: 13%;
+    padding-top: 10px;
+    font-size: 22px;
+  } */
+
+  .header1-img {
+    height: 443px;
+    width: 535px;
+  }
+  .header-text {
+    position: fixed;
+    top: 15%;
+    left: 415px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .header1-img {
+    max-width: 223px;
+  }
+  .mapk {
+    display: none;
+  }
+  .fa-ellipsis {
+    display: none;
+  }
+  .colim {
+    flex-direction: column;
+  }
+  .rowin {
+    flex-direction: column;
+  }
+  .column {
+    border-right: 0px solid white;
+    border-bottom: 1px solid white;
+    width: 75%;
+  }
+  .column1 {
+    border-top: 1px solid white;
+    width: 100%;
+  }
+  .gridfun {
+    position: static;
+  }
+  .fun {
+    flex-direction: column;
+  }
+  .textbbn {
+    color: rgb(14, 13, 13);
+    position: static;
+    transform: none;
+    margin-top: 100px;
+  }
+  .header1-text {
+    position: relative;
+    left: 0;
+  }
+  .button-two {
+    flex-direction: column;
+  }
+  .btntwo {
+    margin-top: 10px;
+  }
+
+  .appointment-btn {
+    font-size: 19px;
+    cursor: pointer;
+    margin: 36px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.5rem !important;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .blog-s {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-col {
+    margin: 0px 1px;
+  }
+  .saysf {
+    flex-direction: column;
+  }
+  .textt {
+    flex-direction: column;
+  }
+
+  .boxx {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+    width: 100%;
+    background-color: #faf9f6;
+    justify-content: space-between;
+  }
+  .header3 {
+    min-height: 67vh;
   }
 }
