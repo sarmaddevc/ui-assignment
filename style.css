@@ -80,7 +80,20 @@ nav img {
   font-size: 13px;
   padding-left: 40px;
 }
+.copy-write {
+  color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+}
 
+.copy-write p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.copy-write a {
+  color: blue;
+  text-decoration: none;
+}
 .nav-links ul li ::after {
   content: "";
   width: 0%;
@@ -315,6 +328,10 @@ nav img {
   background: rgb(13, 218, 139);
   transition: 1s;
   border-radius: 50%;
+}
+
+.our-servis {
+  display: none;
 }
 
 /* docotooooooooooooo*/
@@ -626,6 +643,7 @@ nav img {
   text-align: center;
   color: grey;
   font-size: 20px;
+  line-height: 1.5;
 }
 
 .texttt {
@@ -753,19 +771,19 @@ textarea {
   margin-right: 10px;
   margin-left: 10px;
 }
-
-.footer {
-  display: flex;
-
+.foot-r {
   min-height: 50vh;
   background-image: linear-gradient(
-      rgba(121, 122, 124, 0.9),
-      rgba(121, 122, 124, 0.7)
+      rgba(236, 241, 250, 0.9),
+      rgba(248, 250, 252, 0.5)
     ),
     url(images/xdept-1.png);
   background-position: center;
   background-size: cover;
   position: relative;
+}
+.footer {
+  display: flex;
 }
 .list a {
   line-height: 2;
@@ -826,6 +844,9 @@ textarea {
   border-radius: 50%;
   line-height: 2;
 }
+.navbar-menu {
+  display: none;
+}
 
 /*------------------------------------media -------------------------------------*/
 
@@ -846,7 +867,7 @@ textarea {
   background-color: white;
   border-radius: 10px;
 }
-@media screen and (max-width: 420px) {
+@media (max-width: 767.98px) {
   .toggle-button {
     display: flex;
     position: absolute;
@@ -876,7 +897,12 @@ textarea {
     line-height: 1.2;
     font-weight: 950;
   }
-
+  .header-textbox {
+    transform: translate(-5%, -5%);
+    position: relative;
+    left: 0;
+    top: 0;
+  }
   .header-textbox p {
     margin-left: 70px;
     line-height: 1.4;
@@ -887,8 +913,29 @@ textarea {
   }
 
   .header {
-    min-height: 97vh;
-    width: 45vh;
+    min-height: 80vh;
+    width: 72vw;
+  }
+  .header1 {
+    margin: 3%;
+  }
+  .header1-text h1 {
+    font-size: 24px;
+  }
+  .header1-text h1 span {
+    font-size: 24px;
+  }
+  .header1-text p {
+    font-size: 17px;
+  }
+  .btnone {
+    font-size: 13px;
+  }
+  .btntwo {
+    font-size: 13px;
+  }
+  .our-servis {
+    margin-top: 14%;
   }
 
   nav {
@@ -910,13 +957,8 @@ textarea {
     position: absolute;
     top: 1.5%;
     right: 0;
+    display: flex;
   }
-
-  /* .btnone {
-    margin-left: 13%;
-    padding-top: 10px;
-    font-size: 22px;
-  } */
 
   .header1-img {
     height: 443px;
@@ -948,7 +990,8 @@ textarea {
   .column {
     border-right: 0px solid white;
     border-bottom: 1px solid white;
-    width: 75%;
+    width: 72%;
+    padding: 14%;
   }
   .column1 {
     border-top: 1px solid white;
@@ -959,6 +1002,7 @@ textarea {
   }
   .fun {
     flex-direction: column;
+    width: 72%;
   }
   .textbbn {
     color: rgb(14, 13, 13);
@@ -967,7 +1011,8 @@ textarea {
     margin-top: 100px;
   }
   .header1-text {
-    position: relative;
+    width: 72%;
+    transform: translate(-0%, -0%);
     left: 0;
   }
   .button-two {
@@ -985,10 +1030,17 @@ textarea {
     text-decoration: none;
     outline: none;
     color: rgb(255, 255, 255);
-    background-color: blue;
+    background-color: rgb(236, 13, 151);
     border: none;
     border-radius: 25px;
     padding: 1rem 1.5rem !important;
+  }
+
+  input,
+  textarea {
+    width: 0;
+
+    margin: 2% 7%;
   }
   .row {
     flex-direction: column;
@@ -997,6 +1049,10 @@ textarea {
   .blog-s {
     display: flex;
     flex-direction: column;
+    width: 72%;
+  }
+  .says {
+    width: 72%;
   }
   .blog-col {
     display: flex;
@@ -1010,12 +1066,23 @@ textarea {
   }
   .textt {
     flex-direction: column;
+    margin: 10px 10px;
   }
 
+  .says-head {
+    align-items: center;
+    padding-left: 20%;
+    padding-bottom: 4%;
+  }
+  .says-sec {
+    margin-left: -62px;
+  }
+  .contt {
+    width: 72%;
+  }
   .boxx {
     text-align: center;
-    width: 50%;
-    margin: auto;
+    margin: 6px 2px;
     padding-top: 50px;
     width: 100%;
     background-color: #faf9f6;
@@ -1023,5 +1090,97 @@ textarea {
   }
   .header3 {
     min-height: 67vh;
+    width: 72%;
+  }
+  .doctor {
+    width: 67%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .heading-section h2 {
+    font-size: 28px;
+  }
+  .container-servis {
+    padding: 30px 20px;
+  }
+  .our-servis {
+    width: 72%;
+    background-color: #e4e6e7;
+    line-height: 2;
+    display: flex;
+  }
+  .heading {
+    font-size: 23px;
+    font-weight: 20px;
+    margin-bottom: 1rem !important;
+    padding-left: 30px;
+  }
+  .heading-servic {
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .servic-s {
+    align-items: center;
+  }
+  .servic-s p {
+    color: gray;
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  .heading span {
+    color: red;
+    background-color: rgb(231, 212, 212);
+    line-height: 1;
+  }
+
+  .form-d {
+    border-radius: 10px;
+    margin-left: 70%;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    padding: 20px;
+  }
+  .form-control {
+    width: 80%;
+    padding: 16px;
+    border-radius: 30px;
+  }
+
+  .form-no-2 {
+    width: 100%;
+    background-color: #f3f3fa;
+  }
+  .form-no-2 h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #207dff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .appointment-pink-btn {
+    font-size: 19px;
+    cursor: pointer;
+    margin: 36px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #fe5f55 !important;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.5rem !important;
+    width: 150px;
+  }
+  .form-field {
+    border-radius: 30px;
+  }
+  .foot-r {
+    width: 72%;
   }
 }
