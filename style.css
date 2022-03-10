@@ -654,7 +654,11 @@ nav img {
 .says-sec:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-
+.number {
+  text-align: center;
+  font-size: 44px;
+  display: flex;
+}
 /* ------------contact us ------------------*/
 
 .boxx {
@@ -885,6 +889,7 @@ textarea {
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .department-wrap {
@@ -923,6 +928,7 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     box-shadow: none;
   }
   .map-kk {
@@ -965,6 +971,7 @@ textarea {
   }
   .header1 {
     min-height: 80vh;
+    margin-bottom: 240px;
   }
   .header1-text h1 {
     font-size: 24px;
@@ -1008,7 +1015,7 @@ textarea {
   }
 
   .header1-img {
-    height: 443px;
+    height: 353px;
     width: 535px;
   }
   .header-text {
@@ -1016,11 +1023,15 @@ textarea {
     top: 15%;
     left: 415px;
   }
+  .textbin p {
+    margin: 0;
+    padding: 20px;
+  }
   .footer {
     flex-direction: column;
   }
   .header1-img {
-    max-width: 223px;
+    max-width: 250px;
   }
 
   .fa-ellipsis {
@@ -1085,7 +1096,7 @@ textarea {
   textarea {
     width: 0;
 
-    margin: 2% 7%;
+    margin: 2% -1%;
   }
   .row {
     flex-direction: column;
@@ -1189,8 +1200,8 @@ textarea {
     padding: 20px;
   }
   .form-control {
-    width: 80%;
-    padding: 16px;
+    width: 100%;
+    padding: 18px 5px;
     border-radius: 30px;
   }
 
@@ -1227,9 +1238,16 @@ textarea {
   }
   .foot-r {
     width: 100%;
-    margin-top: 55%;
   }
   .map {
     width: 48%;
+  }
+  .list-doctt {
+    display: flex;
+    width: 100%;
+  }
+  .select-wrap {
+    padding-left: 1px;
+    width: 100%;
   }
 }
