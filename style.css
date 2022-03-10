@@ -105,7 +105,7 @@ nav img {
 }
 
 .nav-links ul li :hover::after {
-  width: 100%;
+  width: 40%;
 }
 .ab {
   text-align: left;
@@ -248,7 +248,7 @@ nav img {
 
 .btntwo:hover {
   border: 1px rgb(236, 17, 53);
-  background: rgb(13, 218, 139);
+  background: rgb(218, 44, 13);
   transition: 1s;
   border-radius: 50%;
 }
@@ -271,10 +271,10 @@ nav img {
   color: white;
 }
 .btnone:hover {
-  border: 1px solid rgb(236, 17, 53);
-  background: rgb(13, 218, 139);
+  border: 1px solid rgb(17, 174, 236);
+  background: rgb(13, 218, 191);
   transition: 1s;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 .header-text a {
   color: white;
@@ -325,7 +325,7 @@ nav img {
 }
 .btnthree:hover {
   border: 1px solid rgb(236, 17, 53);
-  background: rgb(13, 218, 139);
+  background: rgb(214, 221, 226);
   transition: 1s;
   border-radius: 50%;
 }
@@ -478,7 +478,7 @@ nav img {
 /* blog site*/
 
 .blog-s {
-  background-color: rgb(231, 224, 224);
+  background-color: rgb(243, 240, 240);
 }
 
 .blog-col {
@@ -715,6 +715,7 @@ nav img {
   margin: 5% auto;
   box-shadow: 0px 0px 10px #c8c7d9;
   position: relative;
+  display: flex;
 }
 
 .map {
@@ -727,7 +728,7 @@ nav img {
   height: 100%;
   margin-left: 2%;
   float: left;
-  background-color: #c8c7d9;
+  background-color: #f8f8fc;
 }
 
 .title {
@@ -876,6 +877,14 @@ textarea {
     width: 27px;
     height: 19px;
   }
+  .iframe {
+    width: 220%;
+    height: 155%;
+  }
+  .ifm {
+    width: 208%;
+    height: 155%;
+  }
   .nav-links {
     display: none;
   }
@@ -885,8 +894,18 @@ textarea {
   .mapk {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-shadow: none;
   }
-
+  .map-kk {
+    width: 72%;
+  }
+  .contact-form {
+    width: 95%;
+    margin-left: 0;
+    margin-top: 30%;
+    margin-bottom: 0%;
+  }
   .header-text {
     transform: translate(-8%, -5%);
   }
@@ -975,9 +994,7 @@ textarea {
   .header1-img {
     max-width: 223px;
   }
-  .mapk {
-    display: none;
-  }
+
   .fa-ellipsis {
     display: none;
   }
@@ -1182,5 +1199,6 @@ textarea {
   }
   .foot-r {
     width: 72%;
+    margin-top: 55%;
   }
 }
