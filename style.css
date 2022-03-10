@@ -848,7 +848,9 @@ textarea {
 .navbar-menu {
   display: none;
 }
-
+.list-doctt {
+  display: none;
+}
 /*------------------------------------media -------------------------------------*/
 
 .toggle-button {
@@ -877,6 +879,32 @@ textarea {
     width: 27px;
     height: 19px;
   }
+
+  .container-list-doctt {
+    background-color: rgb(245, 241, 241);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .department-wrap {
+    margin: 2px 2px;
+    padding: 3% 3%;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+  }
+  .department-wrap h3 {
+    font-size: 29px;
+    font-weight: 100;
+  }
+  .department-wrap p {
+    color: #999999;
+  }
+  .icon span {
+    color: blue;
+    padding-top: 10%;
+  }
+
   .iframe {
     width: 220%;
     height: 155%;
@@ -898,12 +926,12 @@ textarea {
     box-shadow: none;
   }
   .map-kk {
-    width: 72%;
+    width: 100%;
   }
   .contact-form {
-    width: 95%;
+    width: 100%;
     margin-left: 0;
-    margin-top: 30%;
+    margin-top: 0%;
     margin-bottom: 0%;
   }
   .header-text {
@@ -933,10 +961,10 @@ textarea {
 
   .header {
     min-height: 80vh;
-    width: 72vw;
+    width: 100%;
   }
   .header1 {
-    margin: 3%;
+    min-height: 80vh;
   }
   .header1-text h1 {
     font-size: 24px;
@@ -1019,7 +1047,7 @@ textarea {
   }
   .fun {
     flex-direction: column;
-    width: 72%;
+    width: 100%;
   }
   .textbbn {
     color: rgb(14, 13, 13);
@@ -1066,10 +1094,10 @@ textarea {
   .blog-s {
     display: flex;
     flex-direction: column;
-    width: 72%;
+    width: 100%;
   }
   .says {
-    width: 72%;
+    width: 100%;
   }
   .blog-col {
     display: flex;
@@ -1095,7 +1123,7 @@ textarea {
     margin-left: -62px;
   }
   .contt {
-    width: 72%;
+    width: 100%;
   }
   .boxx {
     text-align: center;
@@ -1107,10 +1135,10 @@ textarea {
   }
   .header3 {
     min-height: 67vh;
-    width: 72%;
+    width: 100%;
   }
   .doctor {
-    width: 67%;
+    width: 100%;
     text-align: center;
     margin: 0;
   }
@@ -1122,7 +1150,7 @@ textarea {
     padding: 30px 20px;
   }
   .our-servis {
-    width: 72%;
+    width: 100%;
     background-color: #e4e6e7;
     line-height: 2;
     display: flex;
@@ -1198,7 +1226,10 @@ textarea {
     border-radius: 30px;
   }
   .foot-r {
-    width: 72%;
+    width: 100%;
     margin-top: 55%;
+  }
+  .map {
+    width: 48%;
   }
 }
