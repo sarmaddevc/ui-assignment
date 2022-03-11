@@ -87,7 +87,7 @@ nav img {
 
 .copy-write p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   text-align: center;
 }
 .copy-write a {
@@ -155,7 +155,7 @@ nav img {
   text-decoration: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background-color: blue;
+  background: #207dff;
   border: none;
   border-radius: 25px;
   padding: 1rem 1.5rem !important;
@@ -242,13 +242,13 @@ nav img {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4caf50;
+  background: #fe5f55 !important;
   border-radius: 25px;
 }
 
 .btntwo:hover {
   border: 1px rgb(236, 17, 53);
-  background: rgb(218, 44, 13);
+  background: #fe5f55 !important;
   transition: 1s;
   border-radius: 50%;
 }
@@ -403,7 +403,7 @@ nav img {
 /* fun facts*/
 
 .fun {
-  min-height: 70vh;
+  min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(
       rgba(20, 56, 199, 0.7),
@@ -757,7 +757,8 @@ textarea {
   margin: 2% 8%;
   border-radius: 20px;
   text-decoration: none;
-  background-color: palevioletred;
+  background: #fe5f55 !important;
+  border-width: 0;
 }
 .btn-send:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -1092,7 +1093,7 @@ textarea {
     text-decoration: none;
     outline: none;
     color: rgb(255, 255, 255);
-    background-color: rgb(236, 13, 151);
+    background: #207dff;
     border: none;
     border-radius: 25px;
     padding: 1rem 1.5rem !important;
