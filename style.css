@@ -901,6 +901,7 @@ textarea {
   .department-wrap h3 {
     font-size: 29px;
     font-weight: 100;
+    line-height: 2;
   }
   .department-wrap p {
     color: #999999;
@@ -908,6 +909,7 @@ textarea {
   .icon span {
     color: blue;
     padding-top: 10%;
+    line-height: 2;
   }
 
   .iframe {
@@ -916,7 +918,7 @@ textarea {
   }
   .ifm {
     width: 208%;
-    height: 155%;
+    height: 60vh;
   }
   .nav-links {
     display: none;
@@ -970,8 +972,8 @@ textarea {
     width: 100%;
   }
   .header1 {
-    min-height: 80vh;
-    margin-bottom: 240px;
+    min-height: 70vh;
+    margin-bottom: 3vh;
   }
   .header1-text h1 {
     font-size: 24px;
@@ -984,12 +986,14 @@ textarea {
   }
   .btnone {
     font-size: 13px;
+    width: 50%;
   }
   .btntwo {
     font-size: 13px;
+    width: 50%;
   }
   .our-servis {
-    margin-top: 14%;
+    margin-top: 0vh;
   }
 
   nav {
@@ -1070,6 +1074,7 @@ textarea {
     width: 72%;
     transform: translate(-0%, -0%);
     left: 0;
+    position: inherit;
   }
   .button-two {
     flex-direction: column;
